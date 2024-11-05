@@ -1,0 +1,24 @@
+﻿<Window x:Class="PRAK5.Manager"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PRAK5"
+        mc:Ignorable="d"
+        Title="Manager" d:DesignWidth="932.901" Height="451">
+    <Grid>
+        <Button Content="Заказчики" Background="AliceBlue" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="31" Width="86" Click="CustomersClick" />
+        <Frame x:Name="Page" Margin="110,0,0,0"/>
+        <Button Content="Сотрудники" Background="AliceBlue" HorizontalAlignment="Left" Margin="10,46,0,0" VerticalAlignment="Top" Height="31" Width="86" Click="EmployeeClick"/>
+        <Button Content="Выход" Background="Red" HorizontalAlignment="Left" Margin="10,399,0,0" VerticalAlignment="Top" Click="СloseManagerClick" Width="86" Height="26"/>
+        <Button Content="Аккаунты" Background="AliceBlue" HorizontalAlignment="Left" Margin="10,82,0,0" VerticalAlignment="Top" Height="28" Width="86" Click="Button_Click"/>
+        <Button Content="Отзывы" Background="AliceBlue" HorizontalAlignment="Left" Margin="10,115,0,0" VerticalAlignment="Top" Height="27" Width="86" Click="ReviewsClick" />
+        <Button Content="Цветы" Background="AliceBlue" HorizontalAlignment="Left" Margin="10,147,0,0" VerticalAlignment="Top" Height="33" Width="86" Click="ProductsClick" />
+        <Button Content="Заказы" Background="AliceBlue" HorizontalAlignment="Left" Margin="10,185,0,0" VerticalAlignment="Top" Width="86" Height="28" Click="OrdersClick"/>
+        <Button Content="Датели заказа" Background="AliceBlue" HorizontalAlignment="Left" Margin="10,218,0,0" VerticalAlignment="Top" Height="38" Width="86" Click="DetailClick"/>
+        <Button Content="Платежи" Background="AliceBlue" HorizontalAlignment="Left" Margin="10,261,0,0" VerticalAlignment="Top" Height="28" Width="86" Click="PaymentsClick"/>
+        <Button Content="История операций" Background="AliceBlue" HorizontalAlignment="Left" Margin="10,294,0,0" VerticalAlignment="Top" Height="33" Width="86" Click="HistoryClick" FontSize="9"/>
+        <Button Content="Поставщики" Background="AliceBlue" HorizontalAlignment="Left" Margin="10,332,0,0" VerticalAlignment="Top" Height="26" Width="86" Click="Button_Click_1"/>
+        <Button Content="Инвентарь" Background="AliceBlue" HorizontalAlignment="Left" Margin="10,363,0,0" VerticalAlignment="Top" Height="21" Width="86"/>
+    </Grid>
+</Window>

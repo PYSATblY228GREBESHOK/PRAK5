@@ -1,0 +1,34 @@
+﻿<Page x:Class="PRAK5.ReviewsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PRAK5"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ReviewsPage">
+
+    <Grid>
+        <DataGrid x:Name="DataGrid3" Margin="0,0,0,243" SelectionChanged="DataGrid3_SelectionChanged" RenderTransformOrigin="0.5,0.5"/>
+        <TextBox x:Name ="CommenT" HorizontalAlignment="Left" Margin="78,235,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="TextReviews"/>
+        <ComboBox x:Name="RatingList" HorizontalAlignment="Left" Margin="228,235,0,0" VerticalAlignment="Top" Width="120" Height="18"/>
+
+        <Button x:Name="AddBtnClick" Content="Добавить" HorizontalAlignment="Left" Margin="78,283,0,0" VerticalAlignment="Top" Width="62" Click="Add">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="EditBtnClick" Content="Изменить" HorizontalAlignment="Left" Margin="177,283,0,0" VerticalAlignment="Top" Width="62" Click="Edit">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="DeleteBtnClick" Content="Удалить" HorizontalAlignment="Left" Margin="270,283,0,0" VerticalAlignment="Top" Width="62" Click="Delete">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Label Content="Ваш Отзыв" HorizontalAlignment="Left" Margin="78,0,0,0" VerticalAlignment="Center"/>
+        <Label Content="Оценка" HorizontalAlignment="Left" Margin="228,212,0,0" VerticalAlignment="Top" Height="23"/>
+    </Grid>
+</Page>
